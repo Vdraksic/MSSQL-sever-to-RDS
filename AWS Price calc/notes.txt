@@ -1,0 +1,4 @@
+1. For all versions additional 50 gig is ~ 7$ monthly
+2. These estimates are with one avalibility zone
+3. The price calc only offers gp2 storage for now, gp3 is supposed to be 20% cheaper as per: 
+   https://aws.amazon.com/blogs/storage/migrate-your-amazon-ebs-volumes-from-gp2-to-gp3-and-save-up-to-20-on-costs/
