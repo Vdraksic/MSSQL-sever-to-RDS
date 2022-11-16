@@ -5,8 +5,8 @@ resource "aws_db_instance" "RDSDB" {
   character_set_name                  = "SQL_Latin1_General_CP1_CI_AS"
   engine_version                      = var.engine_ver
   instance_class                      = var.instance_class
-  username                            = "kordbmaster"
-  password                            = "K0r#Master"
+  username                            = data.aws_ssm_parameter.RDS_username.value
+  password                            = data.aws_ssm_parameter.RDS_password.value
   identifier                          = var.identifier
   skip_final_snapshot                 = true
   backup_retention_period             = var.backup_retention_period
@@ -66,4 +66,6 @@ resource "aws_db_option_group" "RestoreBackup" {
   }
   timeouts {}
 }
+
+
 
