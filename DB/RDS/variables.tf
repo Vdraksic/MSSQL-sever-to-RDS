@@ -48,3 +48,38 @@ variable "port" {
 
 }
 
+variable "monitoring_interval" {
+  type = number
+
+}
+
+variable "subnet1" {
+  type = string
+
+}
+
+variable "subnet2" {
+  type = string
+
+}
+
+variable "security_group" {
+  type = string
+
+}
+
+variable "storage_type" {
+  type = string
+
+}
+
+variable "DB_username" {
+  type      = string
+  sensitive = true
+
+}
+
+variable "DB_password" {
+  type      = string
+  sensitive = true
+}

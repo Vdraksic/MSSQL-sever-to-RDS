@@ -86,7 +86,7 @@ resource "aws_iam_policy" "sql-server-backup-restore-policy" {
         ]
         Effect = "Allow"
         Resource = [
-          "arn:aws:s3:::KorRestoreBucket",
+          "arn:aws:s3:::${aws_s3_bucket.bucket.id}",
         ]
 
       },
@@ -100,7 +100,7 @@ resource "aws_iam_policy" "sql-server-backup-restore-policy" {
         ]
         Effect = "Allow"
         Resource = [
-          "arn:aws:s3:::KorRestoreBucket/*",
+          "arn:aws:s3:::${aws_s3_bucket.bucket.id}/*",
         ]
       },
     ]
