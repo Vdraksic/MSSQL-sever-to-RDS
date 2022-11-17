@@ -5,17 +5,17 @@
 
 The separation is used so terrafrom has a persistent part: 
 
-Global:
-1. S3 bucket
-2. IAM roles and policies
+* Global:
+* S3 bucket
+* IAM roles and policies
 
 And so we can freely destroy/reuse the variable part:
 
-DB:
-1. RDS module 
-2. SSM parameters
-3. VPC module 
-4. Security groups
+* DB:
+* RDS module 
+* SSM parameters
+* VPC module 
+* Security groups
 
 The parameters of the VPC/RDS are configured in ./DB/main.tf, then the VPC and RDS instance can be created with terraform plan/apply
 
