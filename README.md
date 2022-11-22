@@ -1,4 +1,4 @@
-# This is a terraform file that creates a VPC, RDS and S3 bucket on AWS for testing KOR databases
+# This is a terraform file that creates a VPC, RDS and S3 bucket on AWS for restoring a MSSQL server DB on RDS
 
 
 ## The project is seperated into two parts: DB and global
